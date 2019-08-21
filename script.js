@@ -14,10 +14,16 @@ function createGrid(size) {
     for (x = 0; x < size; x++) {
         for (y = 0; y < size; y++) {
 
+            //create and append divs
             let div = document.createElement('div');
             container.appendChild(div);
             div.style.backgroundColor = 'lightgrey';
             div.classList.add('pixel');
+
+            // update css variables to adjust grid size
+        
+            document.documentElement.style.setProperty('--size', size);
+            
 
             div.addEventListener('mouseover', () => {
                 div.style.backgroundColor = 'black';
@@ -29,7 +35,7 @@ function createGrid(size) {
 createGrid(16);
 
 function clear() {
-    let size = Number(prompt('please enter a number for the size of canvas'));
+    let size = Number(prompt('please enter a number between '));
         if (typeof size == 'number' && size > 0) {
             createGrid(size);
         } else {
