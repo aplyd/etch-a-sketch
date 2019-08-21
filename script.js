@@ -1,21 +1,41 @@
 let container = document.querySelector('.container');
+let clearBtn = document.querySelector('#clearBtn');
+let pixel = document.querySelectorAll('.pixel');
 
-for (x = 0; x < 16; x++) {
-    for (y = 0; y < 16; y++) {
-        let div = document.createElement('div');
-        container.appendChild(div);
-        div.classList.add('square');
-        div.addEventListener('mouseover', () => {
-            div.style.backgroundColor = 'black';
-        })
+
+function createGrid(size) {
+    
+    //erase previously created canvas https://stackoverflow.com/a/3955238
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    //
+
+    for (x = 0; x < size; x++) {
+        for (y = 0; y < size; y++) {
+
+            let div = document.createElement('div');
+            container.appendChild(div);
+            div.style.backgroundColor = 'lightgrey';
+            div.classList.add('pixel');
+
+            div.addEventListener('mouseover', () => {
+                div.style.backgroundColor = 'black';
+            })
+        }
     }
 }
 
-let square = document.querySelectorAll('.square');
-
+createGrid(16);
 
 function clear() {
-    square.forEach(function() {
-        this.style.backgroundColor = 'grey';
-    })
+    let size = Number(prompt('please enter a number for the size of canvas'));
+        if (typeof size == 'number' && size > 0) {
+            createGrid(size);
+        } else {
+            alert('characters other than numbers are not supported');
+                clear();
+            }
 }
+
+clearBtn.addEventListener('mouseup', clear);
