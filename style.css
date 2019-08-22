@@ -54,3 +54,82 @@ header {
 .pixel {
     border-radius: 5px;
 }
+
+
+@media only screen and (max-width : 1414px) {
+    .container {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    body {
+        grid-template-columns: 10% 1fr 10%;
+    }
+
+    .container {
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width : 905px) {
+    body {
+        grid-template-columns: 5% 1fr 5%;
+    }
+
+    .container {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width : 720px) {
+    .container {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width : 580px) {
+    .container {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width : 525px) {
+    .container {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width : 470px) {
+    .container {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .container {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+@media only screen and (max-width : 330px) {
+    .container {
+        width: 250px;
+        height: 250px;
+    }
+}
