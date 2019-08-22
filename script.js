@@ -106,7 +106,7 @@ function clearNormal() {
             createGridNormal(size);
         } else {
             alert('characters other than numbers are not supported');
-                clear();
+                createGridNormal(16);
             }
 }
 
@@ -116,7 +116,7 @@ function clearColor() {
             createGridColor(size);
         } else {
             alert('characters other than numbers are not supported');
-                clear();
+                createGridColor(16);
             }
 }
 
@@ -126,7 +126,8 @@ function clearGreyScale() {
             createGridGreyscale(size);
         } else {
             alert('characters other than numbers are not supported');
-                clear();
+                createGridGreyscale(16);
+
             }
 }
 
