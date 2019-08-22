@@ -66,27 +66,29 @@ function createGridColor(size) {
     }
 }
 
+
 createGridNormal(16);
 
 function clearNormal() {
-    let size = Number(prompt('please enter a number between '));
+    let size = Number(prompt('please enter a number between 12 & 240'));
         if (typeof size == 'number' && size > 0) {
             createGridNormal(size);
         } else {
             alert('characters other than numbers are not supported');
-                clear();
+                clearNormal();
             }
 }
 
 function clearColor() {
-    let size = Number(prompt('please enter a number between '));
+    let size = Number(prompt('please enter a number between 12 & 240'));
         if (typeof size == 'number' && size > 0) {
             createGridColor(size);
         } else {
             alert('characters other than numbers are not supported');
-                clear();
+                clearColor();
             }
 }
+
 
 clearBtn.addEventListener('mouseup', clearNormal);
 clearBtnColor.addEventListener('mouseup', clearColor);
