@@ -7,12 +7,6 @@
     --size: 16;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-
 
 body {
     display: grid;
@@ -137,6 +131,12 @@ header {
 }
 
 @media only screen and (max-width : 720px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
     .container {
         width: 500px;
         height: 500px;
