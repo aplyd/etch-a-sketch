@@ -28,7 +28,7 @@ function createGridNormal(size) {
             document.documentElement.style.setProperty('--size', size);
             
 
-            div.addEventListener('mouseover', () => {
+            div.addEventListener('click', () => {
                 div.style.backgroundColor = 'black';
             })
         }
@@ -60,7 +60,7 @@ function createGridColor(size) {
             let randomGreenValue = Math.floor(Math.random() * 255) + 1;
             let randomBlueValue = Math.floor(Math.random() * 255) + 1;
 
-            div.addEventListener('mouseover', () => {
+            div.addEventListener('click', () => {
                 div.style.backgroundColor = "rgb(" + randomRedValue + "," + randomBlueValue + "," + randomGreenValue + ")";
             })
         }
@@ -90,7 +90,7 @@ function createGridGreyscale(size) {
             document.documentElement.style.setProperty('--size', size);
             
 
-            div.addEventListener('mouseover', () => {
+            div.addEventListener('click', () => {
                 console.log(div.style.opacity = Number(div.style.opacity) + 0.1);
                 div.style.backgroundColor = 'black';
             })
