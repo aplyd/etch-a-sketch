@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    overflow-y: hidden;
+}
+
 :root {
     --size: 16;
 }
@@ -13,6 +17,7 @@ body {
     grid-template-columns: 15% 1fr 15%;
     grid-template-rows: 10vh 10vh 80vh;
     grid-gap: 10px;
+    overflow: hidden;
 }
 
 
