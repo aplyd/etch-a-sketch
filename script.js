@@ -5,7 +5,7 @@ let clearBtnGreyscale = document.querySelector('#clearBtnGreyscale');
 let pixel = document.querySelectorAll('.pixel');
 
 
-
+//prevent scrolling on mobile, hopefully
 document.body.addEventListener('touchmove', function(e) {
 
         e.preventDefault();
@@ -37,6 +37,10 @@ function createGridNormal(size) {
             
 
             div.addEventListener('mouseover', () => {
+                div.style.backgroundColor = 'black';
+            })
+
+            div.addEventListener('touchmove', () => {
                 div.style.backgroundColor = 'black';
             })
         }
