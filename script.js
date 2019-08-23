@@ -6,6 +6,14 @@ let pixel = document.querySelectorAll('.pixel');
 
 
 
+document.body.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
+
+
+
 function createGridNormal(size) {
     
     //erase previously created canvas https://stackoverflow.com/a/3955238
