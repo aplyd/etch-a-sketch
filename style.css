@@ -18,6 +18,7 @@ body {
     grid-template-rows: 10vh 10vh 80vh;
     grid-gap: 10px;
     overflow: hidden;
+    position: absolute;
 }
 
 
